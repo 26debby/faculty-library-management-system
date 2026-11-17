@@ -1,0 +1,177 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.departments-page {
+  padding: 30px;
+  color: #302638;
+  background: #F0EAF2;
+  min-height: 100%;
+}
+
+.departments-page h2 {
+  font-size: 25px;
+  font-weight: 700;
+  color: #301638;
+  margin: 0 0 8px;
+}
+
+.departments-page > p {
+  font-size: 14px;
+  color: #796d7d;
+  margin: 0 0 28px;
+}
+
+/* Department Form */
+.departments-page form {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px;
+  background: #F8F4F9;
+  border: 1px solid #E4D9E8;
+  border-radius: 12px;
+  margin-bottom: 35px;
+}
+
+.departments-page form input,
+.departments-page form select {
+  flex: 1;
+  min-width: 0;
+  height: 45px;
+  padding: 0 14px;
+  border: 1px solid #DED2E2;
+  border-radius: 8px;
+  background: #fff;
+  color: #302638;
+  font-size: 14px;
+  outline: none;
+}
+
+.departments-page form input:focus,
+.departments-page form select:focus {
+  border-color: #70438A;
+  box-shadow: 0 0 0 3px rgba(112, 67, 138, 0.09);
+}
+
+.departments-page button {
+  height: 42px;
+  padding: 0 18px;
+  border: none;
+  border-radius: 8px;
+  background: #70438A;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  white-space: nowrap;
+}
+
+.departments-page button:hover:not(:disabled) {
+  background: #563267;
+}
+
+.departments-page button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+/* List Header */
+.department-list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.department-list-header h3 {
+  margin: 0;
+  color: #301638;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.department-list-header button {
+  background: #87384F;
+  height: 38px;
+  font-size: 12px;
+}
+
+.department-list-header button:hover:not(:disabled) {
+  background: #68283B;
+}
+
+/* Select All */
+.departments-page > label {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  width: fit-content;
+  margin-bottom: 12px;
+  color: #65556A;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Department Rows */
+.departments-page ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #F8F4F9;
+  border: 1px solid #E4D9E8;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.departments-page li {
+  padding: 16px 20px;
+  border-bottom: 1px solid #EAE1ED;
+  transition: background 0.2s ease;
+}
+
+.departments-page li:last-child {
+  border-bottom: none;
+}
+
+.departments-page li:hover {
+  background: #F0E7F3;
+}
+
+.departments-page li label {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  color: #3D3042;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Checkboxes */
+.departments-page input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  accent-color: #70438A;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .departments-page {
+    padding: 18px;
+  }
+
+  .departments-page form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .departments-page form input,
+  .departments-page form select {
+    width: 100%;
+  }
+}

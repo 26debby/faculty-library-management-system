@@ -1,0 +1,126 @@
+
+.material-copies-page {
+  padding: 10px;
+}
+
+.material-copies-page h2 {
+  color: var(--primary);
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.material-copies-page > p {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.material-copies-page form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+  padding: 24px;
+  background: #E9DFEC;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  margin-bottom: 28px;
+}
+
+.material-copies-page input,
+.material-copies-page select {
+  flex: 1;
+  min-width: 200px;
+  padding: 13px 15px;
+  background: #F8F4F9;
+  color: var(--text);
+  border: 1px solid #D5C7DB;
+  border-radius: 9px;
+  font-size: 13px;
+  outline: none;
+}
+
+.material-copies-page input:focus,
+.material-copies-page select:focus {
+  border-color: var(--purple);
+  box-shadow: 0 0 0 3px rgba(112, 67, 138, 0.12);
+}
+
+.material-copies-page button {
+  padding: 12px 20px;
+  background: var(--purple);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.material-copies-page button:hover {
+  background: var(--primary);
+}
+
+.material-copies-page h3 {
+  color: var(--primary);
+  font-size: 18px;
+  margin-top: 28px;
+  margin-bottom: 15px;
+}
+
+.material-copies-page table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 15px;
+  background: #F8F4F9;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(48, 22, 56, 0.05);
+}
+
+.material-copies-page th {
+  background: var(--primary);
+  color: white;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.material-copies-page th,
+.material-copies-page td {
+  padding: 14px 12px;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+  font-size: 13px;
+}
+
+.material-copies-page td {
+  color: var(--text);
+}
+
+.material-copies-page tbody tr:nth-child(even) {
+  background: #EEE6F1;
+}
+
+.material-copies-page tbody tr:hover {
+  background: #E5D8EA;
+}
+
+.material-copies-page tbody tr:last-child td {
+  border-bottom: none;
+}
+
+@media (max-width: 700px) {
+  .material-copies-page form {
+    padding: 18px;
+  }
+
+  .material-copies-page input,
+  .material-copies-page select {
+    width: 100%;
+    min-width: 100%;
+  }
+}

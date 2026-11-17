@@ -1,0 +1,139 @@
+
+.borrowers-page {
+  padding: 10px;
+}
+
+.borrowers-page h2 {
+  text-align: left;
+  color: var(--primary);
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.borrowers-page > p {
+  text-align: left;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.borrowers-page form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+  padding: 24px;
+  background: #E9DFEC;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  margin-bottom: 28px;
+}
+
+.borrowers-page input,
+.borrowers-page select {
+  flex: 1;
+  min-width: 200px;
+  padding: 13px 15px;
+  background: #F8F4F9;
+  color: var(--text);
+  border: 1px solid #D5C7DB;
+  border-radius: 9px;
+  font-size: 13px;
+  outline: none;
+}
+
+.borrowers-page input:focus,
+.borrowers-page select:focus {
+  border-color: var(--purple);
+  box-shadow: 0 0 0 3px rgba(112, 67, 138, 0.12);
+}
+
+.borrowers-page button {
+  padding: 12px 20px;
+  background: var(--purple);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.borrowers-page button:hover {
+  background: var(--primary);
+}
+
+.borrowers-page h3 {
+  color: var(--primary);
+  font-size: 18px;
+  margin-top: 28px;
+  margin-bottom: 15px;
+}
+
+.borrowers-page table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 15px;
+  background: #F8F4F9;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(48, 22, 56, 0.05);
+}
+
+.borrowers-page th {
+  background: var(--primary);
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.borrowers-page th,
+.borrowers-page td {
+  padding: 14px 12px;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+  font-size: 13px;
+}
+
+.borrowers-page td {
+  color: var(--text);
+}
+
+.borrowers-page tbody tr:nth-child(even) {
+  background: #EEE6F1;
+}
+
+.borrowers-page tbody tr:hover {
+  background: #E5D8EA;
+}
+
+.borrowers-page tbody tr:last-child td {
+  border-bottom: none;
+}
+
+@media (max-width: 700px) {
+  .borrowers-page form {
+    padding: 18px;
+  }
+
+  .borrowers-page input,
+  .borrowers-page select {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .borrowers-page table {
+    font-size: 12px;
+  }
+
+  .borrowers-page th,
+  .borrowers-page td {
+    padding: 9px 7px;
+  }
+}
