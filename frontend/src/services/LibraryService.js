@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:8080/api";
+const API_URL = "https://faculty-library-management-system.onrender.com/api";
 
 export async function getFaculties() {
   const response = await fetch(`${API_URL}/faculties`);

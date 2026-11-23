@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:8080/api/books";
+const API_URL = "https://faculty-library-management-system.onrender.com/api/books";
 
 // Get all books
 export async function getBooks() {
